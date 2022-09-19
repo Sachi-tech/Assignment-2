@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="form-style.css">
+</head>
+<body>
+    <h3>Advertising Estimate</h3>  
+    <form action="">
+        <label for="company-name" aria-label="Required question" maxlength="10">Name / Company name</label><span>*</span><br>
+        <input type="text" class="input" name="company-name" required><br><br>
+        <label for="email" aria-label="Required question">Email</label><span>*</span><br>
+        <input type="email" class="input" name="email"><br><br>
+        <label for="start-date" aria-label="Required question">Ad Start Date</label><span>*</span><br>
+        <input type="date" class="date" name="start-date"><br><br>
+        <label for="end-date" aria-label="Required question">Ad End Date</label><span>*</span><br>
+        <input type="date" class="date" name="end-date"><br><br>
+        <label for="button">Advertising Size(pixels)</label><br>
+        <input type="radio" name="button"><label for="text">Option 1</label><br>
+        <input type="radio" name="button"><label for="text">Option 2</label><br>
+        <input type="radio" name="button"><label for="text">Option 3</label><br><br>
+        <p>Which sites would you like to advertise on?</p>
+        <input type="checkbox" name="checkbox"><label for="text">Option 1</label><br>
+        <input type="checkbox" name="checkbox"><label for="text">Option 1</label><br>
+        <input type="checkbox" name="checkbox"><label for="text">Option 1</label><br><br>
+        <label for="text" aria-label="Required question">Website to be advertised</label><span>*</span><br>
+        <input type="text" class="input" name="website"><br><br>
+        <p>Comments</p>
+        <textarea name="text" class="input" cols="30" rows="10"></textarea><br><br>
+        <input type="button" value="Submit" name="button" id="button" onclick="dataSubmit()">
+    </form>
+</body>
+<script type="text/javascript">
+    function dataSubmit(){
+        let res = document.getElementById("button").value = "Data Submitted Successfully";
+        alert(res);
+    }
+</script>
+</html>
